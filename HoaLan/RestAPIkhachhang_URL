@@ -1,0 +1,18 @@
+getAllUsers:::
+http://localhost:8080/khachhang
+----------------------------------------------------------------------------------
+getUserById:::
+http://localhost:8080/khachhang/{Id}
+----------------------------------------------------------------------------------
+createUser
+http://localhost:8080/khachhang/them
+JSON Input:::
+{"id":3,"ten":"Martin","gioitinh":"Bingel","sodienthoai":"092082","email":"hgsgscscs","diachi":"dhshgdhg"}
+----------------------------------------------------------------------------------
+updateUser:::
+http://localhost:8080/khachhang/update/{Id}
+JSON Input:::
+{"id":3,"ten":"Hien","gioitinh":"Bingel","sodienthoai":"092082","email":"hgsgscscs","diachi":"dhshgdhg"}
+----------------------------------------------------------------------------------
+deleteUser:::
+http://localhost:8080/khachhang/delete/{Id}
