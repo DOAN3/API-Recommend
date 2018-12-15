@@ -1,9 +1,8 @@
-package com.hoalan.api.bo;
-
+package com.hoalan.api.nhan;
 
 import org.springframework.data.annotation.Id;
 
-public class Bo {
+public class Nhan {
 	  @Id
 	    private String id;
 		public String getId() {

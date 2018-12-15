@@ -8,7 +8,7 @@ public interface KhachhangRepository extends MongoRepository<Khachhang, String> 
 
 
 
-public Khachhang findOneByTen(String ten);
+public Khachhang findByTen(String ten);
   
 
 

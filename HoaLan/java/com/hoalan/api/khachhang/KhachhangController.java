@@ -1,3 +1,10 @@
+
+
+
+
+
+
+
 package com.hoalan.api.khachhang;
 
 
@@ -27,13 +34,13 @@ public class KhachhangController {
 //    public String getKhachhangRepository() {
 //      return "khachangRepository";
 //    }
-    @RequestMapping(value="/hoalan/all",method = RequestMethod.GET)
+    @RequestMapping(value="/tatcakhachhang",method = RequestMethod.GET)
     public java.util.List<Khachhang> getAllKhachhangs() {
       return khachhangRepository.findAll();
     }
     @RequestMapping(value="/timkiem",method = RequestMethod.GET)
     public Khachhang getAllKhachhangs(@RequestParam String ten) {
-    	return khachhangRepository.findOneByTen(ten);
+    	return khachhangRepository.findByTen(ten);
     }
 //    
 //    @GetMapping
@@ -43,10 +50,10 @@ public class KhachhangController {
 //    	return "get khachhang = " +page+ " and limit = " + limit;
 //    
 //}
-    @RequestMapping(value="/timkiem/{ten}",method = RequestMethod.GET)
-    public Khachhang showKhachhang(@PathVariable String ten){
-        return khachhangRepository.findOneByTen(ten);
-    }
+//    @RequestMapping(value="/timkiem/{ten}",method = RequestMethod.GET)
+//    public Khachhang showKhachhang(@PathVariable String ten){
+//        return khachhangRepository.findOneByTen(ten);
+//    }
 
 
     @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)

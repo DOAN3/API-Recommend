@@ -3,6 +3,7 @@ package com.hoalan.api.sanpham;
 
 import org.springframework.data.annotation.Id;
 
+
 public class Sanpham {
 	  @Id
 	    private String id;
@@ -24,29 +25,25 @@ public class Sanpham {
 	public void setMota(String mota) {
 		this.mota = mota;
 	}
-	public String getGia() {
+	public int getGia() {
 		return gia;
 	}
-	public void setGia(String gia) {
+	public void setGia(int gia) {
 		this.gia = gia;
 	}
-	public long getHinh() {
+	public String getHinh() {
 		return hinh;
 	}
-	public void setHinh(long hinh) {
+	public void setHinh(String hinh) {
 		this.hinh = hinh;
-	}
-	public String getGoiy() {
-		return goiy;
-	}
-	public void setGoiy(String goiy) {
-		this.goiy = goiy;
 	}
 		private String ten;
 		private String mota;
-	    private String gia;
-	    private long hinh;
-	    private String goiy;
+	    private int gia;
+	    private String hinh;
+	    
+	    
+	    
 	    
 
 	    
